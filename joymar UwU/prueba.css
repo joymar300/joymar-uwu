@@ -1,0 +1,55 @@
+#barra{
+  
+    background-color: rgb(24, 24, 24);
+    height: 70px;
+
+}
+#barra{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#izquierda img{
+    
+    width: 90px;
+    border: 1px solid red;
+
+}
+
+#derecha2{
+    display: none;
+    
+}
+
+#drecha{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid blue;
+    color: blanchedalmond;
+    font-size: 20px;
+    list-style: none;
+    margin: 20px;
+    width: 500px;
+}
+
+@media (max-width: 768px){
+    #barra{
+        background-color: orange;
+    }
+
+    #drecha{
+        display: none;
+    }
+
+    #derecha2{
+        display: flex;
+        align-items: center;
+        border: 1px solid red;
+        width: 70px;
+    }
+    #derecha2 img{
+      
+    }
+    
+}
