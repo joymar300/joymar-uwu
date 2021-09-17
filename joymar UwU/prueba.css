@@ -1,5 +1,9 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 #barra{
-  
+    margin-top: 0px;
     background-color: rgb(24, 24, 24);
     height: 70px;
 
@@ -11,14 +15,18 @@
 }
 
 #izquierda img{
-    
-    width: 90px;
-    border: 1px solid red;
+    margin: 5px 10px;
+    width: 60px;
+    border: 1px solid blue;
 
 }
 
 #derecha2{
     display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+   
     
 }
 
@@ -26,11 +34,25 @@
     display: flex;
     justify-content: space-around;
     border: 1px solid blue;
-    color: blanchedalmond;
-    font-size: 20px;
     list-style: none;
-    margin: 20px;
-    width: 500px;
+  
+}
+
+#drecha li{
+    font-size: 20px;
+    margin: 0 20px;
+    line-height: 70px;
+
+}
+.a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+.a:hover{
+    background-color: crimson;
+    transition: 0.5s;
 }
 
 @media (max-width: 768px){
@@ -39,17 +61,23 @@
     }
 
     #drecha{
-        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        background-color: orange;
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        overflow-y: auto;
     }
 
     #derecha2{
-        display: flex;
+        display: block;
         align-items: center;
         border: 1px solid red;
-        width: 70px;
+        width: 70px;    
     }
-    #derecha2 img{
-      
-    }
+
     
 }
